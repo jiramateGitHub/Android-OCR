@@ -29,6 +29,9 @@ class MainActivity : AppCompatActivity() {
         btnTakePhoto.setOnClickListener {
             EasyImage.openCameraForImage(this, 0)
         }
+        btnGallery.setOnClickListener {
+            EasyImage.openGallery(this, 0)
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
